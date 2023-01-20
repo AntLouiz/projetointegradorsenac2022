@@ -2485,6 +2485,8 @@ button.navbar-toggler:focus {
 }
 
 .process-item {
+    justify-items: center;
+    display: grid;
     position: relative;
     border-radius: 15px;
     padding: 25px;
