@@ -840,11 +840,11 @@ label {
 }
 
 .navbar.fixed-top .nav-item .nav-link {
-    color: #1d293f
+    color: #069191;
 }
 
 .navbar.fixed-top .header-nav-link {
-    color: #1d293f
+    color: #069191;
 }
 
 .navbar.fixed-top .header-nav-link:hover {
@@ -857,7 +857,7 @@ label {
 }
 
 .navbar.fixed-top .header-account-link {
-    color: #1d293f
+    color: #069191;
 }
 
 @keyframes slide-down {
@@ -973,7 +973,7 @@ button.navbar-toggler:focus {
     }
 
     .navbar .nav-item .nav-link {
-        color: #1d293f;
+        color: #069191;
         font-weight: 700;
         transition: all .5s ease-in-out
     }
@@ -2482,6 +2482,7 @@ button.navbar-toggler:focus {
 .process-area {
     position: relative;
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .process-item {
@@ -5481,12 +5482,12 @@ button.navbar-toggler:focus {
 
 @media(min-width:992px) {
     .home-2 .navbar .nav-item .nav-link {
-        color: #1d293f
+        color: #069191;
     }
 
     .home-2 .navbar .nav-item .nav-link.active,
     .home-2 .navbar .nav-item:hover .nav-link {
-        color: #0ec6c6
+        color: #069191;
     }
 
     .home-2 .header-account-link {
