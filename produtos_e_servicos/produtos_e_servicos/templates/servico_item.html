@@ -1,0 +1,27 @@
+<div class="listing-item">
+    <div class="listing-img">
+        {% if serivo.imagem %}
+            <img src="{{ servico.imagem.url }}" alt="">
+        {% else %}
+            <img src="assets/img/listing/01.jpg" alt="">
+        {% endif %}
+    </div>
+    <div class="listing-content">
+        <div class="listing-info">
+        <h5><a href="#">{{ servico.nome }}</a></h5>
+        <p><i class="far fa-location-dot"></i> Parnaíba, Piauí</p>
+        <div class="listing-bottom">
+            <div class="listing-author">
+                {% if servico.anunciante.imagem %}
+                    <img src="{{ servico.anunciante.imagem.url }}" alt="">
+                {% else %}
+                    <img src="assets/img/listing/author.jpg" alt="">
+                {% endif %}
+                <img src="assets/img/listing/author.jpg" alt="">
+                <h6>{{ servico.anunciante.nome }}</h6>
+            </div>
+            <a href="#" class="listing-text-btn">Ver detalhes<i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</div>
+</div>

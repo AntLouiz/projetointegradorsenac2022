@@ -159,38 +159,37 @@
 </div>
 </div>
 <div class="listing-slider owl-carousel owl-theme">
+    {% for servico in servicos %}
+        {% include 'templates/servico_item.html' with servico=servico %}
+    {% endfor %}
+
 <div class="listing-item">
-<div class="listing-img">
-<img src="assets/img/listing/01.jpg" alt="">
-
+    <div class="listing-img">
+        <img src="assets/img/listing/01.jpg" alt="">
+    </div>
+    <div class="listing-content">
+        <div class="listing-top">
+            <div class="listing-category">
+                <div class="listing-category-icon">
+                    <i class="fal fa-utensils"></i>
+                </div>
+                <h6 class="listing-category-title"><a href="#">Restaurante</a></h6>
+            </div>
+        </div>
+        <div class="listing-info">
+            <h5><a href="#">Macarone ao Molho</a></h5>
+            <p><i class="far fa-location-dot"></i> Parnaíba, Piauí</p>
+            <div class="listing-bottom">
+                <div class="listing-author">
+                    <img src="assets/img/listing/author.jpg" alt="">
+                    <h6>Rebeca Lima</h6>
+                </div>
+                <a href="#" class="listing-text-btn">Ver detalhes<i class="fas fa-arrow-right"></i></a>
+            </div>
+        
+        </div>
+    </div>
 </div>
-<div class="listing-content">
-<div class="listing-top">
-<div class="listing-category">
-<div class="listing-category-icon">
-<i class="fal fa-utensils"></i>
-</div>
-<h6 class="listing-category-title"><a href="#">Restaurante</a></h6>
-</div>
-</div>
-<div class="listing-info">
-<h5><a href="#">Macarone ao Molho</a></h5>
-<p><i class="far fa-location-dot"></i> Parnaíba, Piauí</p>
-<div class="listing-more-info">
-<div class="listing-date"><i class="far fa-calendar-days"></i> postado 5 dias
-    Atrás</div>
-</div>
-</div>
-<div class="listing-bottom">
-<div class="listing-author">
-<img src="assets/img/listing/author.jpg" alt="">
-<h6>Rebeca Lima</h6>
-</div>
-<a href="#" class="listing-text-btn">Ver detalhes<i class="fas fa-arrow-right"></i></a>
-</div>
-</div>
-</div>
-
 
 
 <div class="listing-item">
