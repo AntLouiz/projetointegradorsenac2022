@@ -1247,7 +1247,8 @@ button.navbar-toggler:focus {
     padding: 8px 10px;
     border-radius: 18px;
     position: relative;
-    box-shadow: 0 0 40px 5px rgb(0 0 0/5%)
+    box-shadow: 0 0 40px 5px rgb(0 0 0/5%);
+    margin-bottom: 60px;
 }
 
 .search-form div[class*=col-] {
@@ -1359,7 +1360,8 @@ button.navbar-toggler:focus {
     background: #fff;
     border-radius: 15px;
     padding: 30px;
-    box-shadow: 0 0 40px 5px rgb(0 0 0/5%)
+    box-shadow: 0 0 40px 5px rgb(0 0 0/5%);
+    margin-top: 100px;
 }
 
 .search-area .search-wrapper h4 {
@@ -2478,7 +2480,8 @@ button.navbar-toggler:focus {
 }
 
 .process-area {
-    position: relative
+    position: relative;
+    margin-bottom: 50px;
 }
 
 .process-item {
@@ -5180,8 +5183,9 @@ button.navbar-toggler:focus {
 }
 
 .copyright {
-    padding: 20px 0;
-    border-top: 2px dashed rgba(255, 255, 255, .04)
+    padding: 10px 0;
+    border-top: 2px dashed rgba(255, 255, 255, .04);
+    text-align: center;
 }
 
 .copyright .footer-menu {
@@ -5193,7 +5197,7 @@ button.navbar-toggler:focus {
 .copyright .footer-menu li {
     display: inline-block;
     margin-left: 25px;
-    font-size: 16px
+    font-size: 12px
 }
 
 .copyright .footer-menu li a {
@@ -5208,7 +5212,7 @@ button.navbar-toggler:focus {
 .copyright .copyright-text {
     color: #808996;
     margin-bottom: 0;
-    font-size: 16px
+    font-size: 12px
 }
 
 .copyright .copyright-text a {

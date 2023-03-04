@@ -138,7 +138,7 @@ STATIC_ROOT = BASE_DIR.child('static')
 
 STATICFILES_DIRS = [
     BASE_DIR.child('frontend'),
-    BASE_DIR.child('frontend', 'assets'),
+    BASE_DIR.child('frontend', 'assets', 'css'),
 ]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
