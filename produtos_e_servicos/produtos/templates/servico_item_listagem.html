@@ -1,0 +1,42 @@
+<div class="col-md-12">
+    <div class="listing-item">
+        </div>
+        <div
+            class="listing-content">
+            <div
+                class="listing-top">
+                <div
+                    class="listing-category">
+                </div>
+            </div>
+            <div
+                class="listing-info">
+                <h5><a
+                        href="#">{{ item.nome }}</a></h5>
+                <p><i
+                        class="far
+                        fa-location-dot"></i>
+                    Parnaíba-Pi</p>
+                <div
+                    class="listing-more-info">
+                    <div class="listing-date">
+                        {{ item.descricao }}</div>
+                </div>
+            </div>
+            <div
+                class="listing-bottom">
+                <div
+                    class="listing-author">
+                    <img
+                        src="{{ item.anunciante.imagem.url }}"
+                        alt="">
+                    <h6>{{ item.anunciante.nome }}</h6>
+                </div>
+                <a href="#"
+                    class="listing-text-btn">
+                    Ver detalhes
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

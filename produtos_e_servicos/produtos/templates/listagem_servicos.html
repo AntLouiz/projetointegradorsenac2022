@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt">
+
+    <!-- Projeto encontre aqui -->
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+        <title>Encontre Aqui</title>
+
+        <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+        <link rel="stylesheet" href={% static "css/bootstrap.min.css" %}>
+        <link rel="stylesheet" href={% static "css/all-fontawesome.min.css" %}>
+        <link rel="stylesheet" href={% static "css/flaticon.css" %}>
+        <link rel="stylesheet" href={% static "css/animate.min.css" %}>
+        <link rel="stylesheet" href={% static "css/magnific-popup.min.css" %}>
+        <link rel="stylesheet" href={% static "css/owl.carousel.min.css" %}>
+        <link rel="stylesheet" href={% static "css/nice-select.min.css" %}>
+        <link rel="stylesheet" href={% static "css/jquery-ui.min.css" %}>
+        <link rel="stylesheet" href={% static "css/style.css" %}>
+    </head>
+    {% include 'templates/menu.html' %}
+    <body class="home-4">
+
+        <div class="preloader">
+            <div class="loader">
+                <div class="loader-dot"></div>
+                <div class="loader-dot dot2"></div>
+                <div class="loader-dot dot3"></div>
+                <div class="loader-dot dot4"></div>
+                <div class="loader-dot dot5"></div>
+            </div>
+        </div>
+
+
+    <main class="main">
+        <div class="listing-area listing-list py-120">
+            <div class="container">
+                {% include 'templates/search.html' %}
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            {% for servico in servicos %}
+                                {% include 'templates/servico_item_listagem.html' with item=servico %}
+                            {% endfor %}
+                            {% include 'templates/paginacao.html' %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+        {% include 'templates/footer.html' %}
+
+        <a href="#" id="scroll-top"><i class="far
+                fa-angle-up"></i></a>
+
+
+        <script data-cfasync="false"
+            src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script
+            src={% static "js/jquery-3.6.0.min.js" %}></script>
+        <script src={% static "js/modernizr.min.js" %}></script>
+        <script src={% static "js/imagesloaded.pkgd.min.js"
+            %}></script>
+        <script src={% static "js/bootstrap.bundle.min.js"
+            %}></script>
+        <script src={% static
+            "js/jquery.magnific-popup.min.js" %}></script>
+        <script src={% static "js/isotope.pkgd.min.js" %}></script>
+        <script src={% static "js/jquery.appear.min.js" %}></script>
+        <script src={% static "js/jquery.easing.min.js" %}></script>
+        <script src={% static "js/owl.carousel.min.js" %}></script>
+        <script src={% static "js/counter-up.js" %}></script>
+        <script src={% static "js/masonry.pkgd.min.js" %}></script>
+        <script src={% static "js/jquery.nice-select.min.js"
+            %}></script>
+        <script src={% static "js/jquery-ui.min.js" %}></script>
+        <script src={% static "js/wow.min.js" %}></script>
+        <script src={% static "js/main.js" %}></script>
+    </body>
+</html>

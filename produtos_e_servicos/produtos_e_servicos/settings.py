@@ -64,7 +64,7 @@ ROOT_URLCONF = 'produtos_e_servicos.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['produtos_e_servicos'],
+        'DIRS': ['produtos_e_servicos', 'produtos'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
