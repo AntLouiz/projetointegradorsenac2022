@@ -49,6 +49,7 @@ class Produto(models.Model):
     valor = models.FloatField(default=0)
     anunciante = models.ForeignKey(Anunciante, on_delete=models.DO_NOTHING, blank=True, null=True)
     imagem = models.ImageField(upload_to='imagens', blank=True, null=True)
+    descricao = models.TextField(max_length=300, blank=True, null=True)
 
     def __str__(self):
         return f'{self.id} - {self.nome} - {self.anunciante.nome}'
@@ -58,6 +59,7 @@ class Servico(models.Model):
     anunciante = models.ForeignKey(Anunciante, on_delete=models.DO_NOTHING, blank=True, null=True)
     horario = models.ForeignKey(HorarioFuncionamento, on_delete=models.DO_NOTHING, null=True, blank=True)
     imagem = models.ImageField(upload_to='imagens', blank=True, null=True)
+    descricao = models.TextField(max_length=300, blank=True, null=True)
 
     def __str__(self):
         return f'{self.id} - {self.nome} - {self.anunciante.nome} - {self.horario}'

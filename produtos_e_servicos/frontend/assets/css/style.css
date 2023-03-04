@@ -672,8 +672,8 @@ label {
         margin-right: 25px;
         padding: 30px 0;
         font-size: 17px;
-        font-weight: 500;
-        color: #fff;
+        font-weight: 800;
+        color: #069191;
     }
 
     .navbar .nav-item:last-child .nav-link {
@@ -1308,9 +1308,9 @@ button.navbar-toggler:focus {
     border: none;
     border-radius: 12px;
     padding: 10px;
-    height: 300px;
+    height: 150px !important;
     overflow-y: auto;
-    box-shadow: 0 0 50px 0 rgb(32 32 32/15%)
+    box-shadow: 0 0 50px 0 rgb(32 32 32/15%);
 }
 
 .search-form .nice-select ::-webkit-scrollbar {
@@ -4591,7 +4591,7 @@ button.navbar-toggler:focus {
     border: none;
     border-radius: 12px;
     padding: 10px;
-    height: 300px;
+    height: 150px;
     overflow-y: auto;
     box-shadow: 0 0 50px 0 rgb(32 32 32/15%)
 }
