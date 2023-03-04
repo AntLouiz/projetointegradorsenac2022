@@ -273,7 +273,6 @@ label {
 
 .site-title {
     font-weight: 700;
-    text-transform: capitalize;
     font-size: 35px;
     color: #1d293f;
     margin-top: 10px;
@@ -675,7 +674,6 @@ label {
         font-size: 17px;
         font-weight: 500;
         color: #fff;
-        text-transform: capitalize
     }
 
     .navbar .nav-item:last-child .nav-link {
@@ -723,7 +721,7 @@ label {
         padding: 10px 0 10px 20px;
         color: #1d293f;
         position: relative;
-        text-transform: capitalize;
+        text-transform: none;
         transition: all .5s ease-in-out;
         z-index: 1
     }
@@ -1123,7 +1121,6 @@ button.navbar-toggler:focus {
     font-size: 65px;
     font-weight: 600;
     margin: 20px 0;
-    text-transform: capitalize
 }
 
 .hero-single .hero-content .hero-title span {
@@ -1137,7 +1134,7 @@ button.navbar-toggler:focus {
     letter-spacing: 5px;
     position: relative;
     font-weight: 700;
-    text-transform: uppercase
+    text-transform: none
 }
 
 .hero-single .hero-content p {
@@ -1146,7 +1143,7 @@ button.navbar-toggler:focus {
     line-height: 30px;
     font-weight: 500;
     margin-bottom: 40px;
-    text-transform: capitalize
+    text-transform: none
 }
 
 .hero-single .hero-content .hero-btn {
@@ -2811,7 +2808,7 @@ button.navbar-toggler:focus {
     margin-top: 10px;
     font-size: 18px;
     font-weight: 600;
-    text-transform: capitalize
+    text-transform: none
 }
 
 @media all and (max-width:991px) {
@@ -2846,7 +2843,7 @@ button.navbar-toggler:focus {
     color: #fff;
     font-size: 45px;
     font-weight: 700;
-    text-transform: capitalize;
+    text-transform: none;
     margin-bottom: 15px
 }
 
@@ -2996,7 +2993,7 @@ button.navbar-toggler:focus {
 .blog-title {
     font-size: 22px;
     margin-bottom: 15px;
-    text-transform: capitalize
+    text-transform: none
 }
 
 .blog-item-info p {
@@ -3901,7 +3898,6 @@ button.navbar-toggler:focus {
     margin-left: 25px;
     color: #fff;
     font-weight: 500;
-    text-transform: capitalize
 }
 
 .site-breadcrumb .breadcrumb-menu li a {
