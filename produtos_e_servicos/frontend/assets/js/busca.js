@@ -23,7 +23,7 @@ const obtemProdutosEServicos = _.debounce(function (resultadosDaBuscaContainer, 
         const dados = JSON.parse(data) || []
         const itens = dados.map(produtoOuServico => {
             const dadosProdutoOuServico = produtoOuServico.fields
-            return obtemItemBusca(dadosProdutoOuServico.nome, dadosProdutoOuServico.imagem)
+            return obtemItemBusca(dadosProdutoOuServico.nome, dadosProdutoOuServico.descricao, dadosProdutoOuServico.imagem)
         })
         resultadosDaBuscaContainer.empty()
 
@@ -44,13 +44,14 @@ const carregaBusca = carregando => {
 }
 
 
-const obtemItemBusca = (nome, urlImagemAnunciante) => {
+const obtemItemBusca = (nome, descricao, urlImagemAnunciante) => {
     const item = $(`
         <li class="listing-item">
             <div class="listing-content">
                 <div class="listing-author">
                     <img src="media/${urlImagemAnunciante}" alt="">
                     <h6>${nome}</h6>
+                    <span>${descricao}</span>
                 </div>
             </div>
         </li>
