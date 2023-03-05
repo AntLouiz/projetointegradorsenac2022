@@ -1750,7 +1750,9 @@ button.navbar-toggler:focus {
 
 .listing-author img {
     width: 38px !important;
-    border-radius: 50px
+    border-radius: 50px;
+    height: 38px !important;
+    object-fit: cover;
 }
 
 .listing-text-btn {
