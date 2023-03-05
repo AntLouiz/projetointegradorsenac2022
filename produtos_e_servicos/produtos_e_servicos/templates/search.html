@@ -1,21 +1,34 @@
 <div class="search-area">
     <div class="container">
-    <div class="search-wrapper">
-    <h4>Encontre Produtos e Serviços perto de você</h4> 
-    <div class="search-form">
-    <form action="#">
-    <div class="row align-items-center">
-    <div class="col-lg-10">
-    <div class="form-group">
-    <div class="form-group-icon">
-    <input type="text" class="form-control" placeholder="Que tal uma busca rápida?">
-    <i class="far fa-search"></i>
+        <div class="search-wrapper">
+            <h4>Encontre Produtos e Serviços perto de você</h4>
+            <div class="search-form">
+                <form action="#">
+                    <div class="row align-items-center">
+                        <div class="col-lg-10">
+                            <div class="form-group">
+                                <div class="form-group-icon">
+                                    <input type="text" class="form-control"
+                                        placeholder="Que tal uma busca rápida?"
+                                        id="busca">
+                                    <i class="far fa-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <button type="submit" class="theme-btn"><span
+                                    class="far fa-search"></span>Buscar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="search-results-container container">
+                <div id="resultados-loader" class="desabilitado">
+                    <span>Buscando...</span>
+                </div>
+                <ul id="resultados-busca" class="search-results">
+                </ul>
+            </div>
+        </div>
     </div>
-    </div>
-    </div>
-    <div class="col-lg-2">
-    <button type="submit" class="theme-btn"><span class="far fa-search"></span>Buscar</button>
-    </div>
-    </div>
-    </form>
-    </div>
+</div>

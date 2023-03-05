@@ -5919,3 +5919,22 @@ button.navbar-toggler:focus {
         margin-right: 0
     }
 }
+
+
+#resultados-busca {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#resultados-loader {
+    background: none;
+    padding-bottom: 12px;
+    width: 10px;
+    position: relative;
+    height: 10px;
+}
+
+.desabilitado {
+    display: none !important;
+}

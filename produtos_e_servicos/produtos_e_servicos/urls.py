@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls.static import static
 
-from produtos.views import listagem_produtos, listagem_servicos
+from produtos.views import busca_produtos_servicos, listagem_produtos, listagem_servicos
 from .views import index
 
 urlpatterns = [
@@ -26,4 +26,5 @@ urlpatterns = [
     path('', index, name='home'),
     path('servicos', listagem_servicos, name='servicos'),
     path('produtos', listagem_produtos, name='produtos'),
+    path('busca', busca_produtos_servicos, name='busca')
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
