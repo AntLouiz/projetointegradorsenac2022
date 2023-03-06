@@ -1,5 +1,5 @@
 <div class="col-md-12">
-    <div class="listing-item">
+    <div class="listing-item item-detail" data-id="{{ item.id }}" data-nome="{{ item.nome }}">
         <div
             class="listing-content">
             <div
@@ -32,7 +32,7 @@
                     <h6>{{ item.anunciante.nome }}</h6>
                 </div>
                 <a href="#"
-                    class="listing-text-btn">
+                    class="listing-text-btn detalhes-item"  data-id="{{ item.id }}" data-nome="{{ item.nome }}" data-tipo={{ tipo }}>
                     Ver detalhes
                 </a>
             </div>

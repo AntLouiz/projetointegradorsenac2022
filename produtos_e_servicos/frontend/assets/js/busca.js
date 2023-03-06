@@ -49,6 +49,16 @@ $('#exampleModalCenter').on('show.bs.modal', e => {
     })
 })
 
+$('.detalhes-item').click(e => {
+    const itemId = e.target.getAttribute('data-id')
+    const nome = e.target.getAttribute('data-nome')
+    const tipo = e.target.getAttribute('data-tipo')
+    $('#exampleModalLongTitle').html(`${nome}`)
+    $('#exampleModalCenter').attr('data-id', itemId)
+    $('#exampleModalCenter').attr('data-tipo', tipo)
+    $('#exampleModalCenter').modal('show')
+})
+
 
 $('#chamar-no-whats').click((dados) => {
     const modalBody = $('.modal-body')
