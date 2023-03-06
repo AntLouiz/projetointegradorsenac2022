@@ -41,17 +41,19 @@ const obtemProdutosEServicos = _.debounce(function (resultadosDaBuscaContainer, 
 $('#exampleModalCenter').on('show.bs.modal', e => {
     const id = e.target.getAttribute('data-id')
     const tipo = e.target.getAttribute('data-tipo')
-    console.log(tipo)
     const url = tipo === 'P' ? `produtos` : `servicos`
 
     $.get(`${url}/${id}`, function (data) {
         const dados = JSON.parse(data)
-        $('#chamar-no-whats').click(() => {
-            window.open(`https://wa.me/${dados.anunciante.telefone}`)
-        })
-
         insereConteudoModal(dados)
     })
+})
+
+
+$('#chamar-no-whats').click((dados) => {
+    const modalBody = $('.modal-body')
+    const telefone = modalBody.attr('data-contato')
+    window.open(`https://wa.me/${telefone}/?text=Olá vim através do EncontreAqui`)
 })
 
 
@@ -71,7 +73,7 @@ const obtemItemBusca = (itemId, nome, descricao, urlImagemAnuncio, tipo) => {
         <li class="listing-item item-resultado" data-toggle="modal" data-target="#exampleModal">
             <div class="listing-content">
                 <div class="listing-author">
-                    <img src="${urlImagemAnuncio ? `media/${urlImagemAnuncio}`: "media/img/listing/no-photo-available.png"}" alt="">
+                    <img src="${urlImagemAnuncio ? `media/${urlImagemAnuncio}`: "media/imagens/no-photo-available.png"}" alt="">
                     <h6>${nome}</h6>
                     <span>${descricao}</span>
                 </div>
@@ -91,6 +93,7 @@ const obtemItemBusca = (itemId, nome, descricao, urlImagemAnuncio, tipo) => {
 
 const insereConteudoModal = (dadosAnuncio) => {
     const modalBody = $('.modal-body')
+    modalBody.attr('data-contato', dadosAnuncio.anunciante.telefone)
     const conteudo = $(`
         <div class="modal-conteudo">
         <div class="dados-anunciante">
@@ -98,7 +101,7 @@ const insereConteudoModal = (dadosAnuncio) => {
             <div class="listing-bottom">
                 <div class="listing-author">
                     <h6>${dadosAnuncio.anunciante.nome}</h6>
-                    <img src="${dadosAnuncio.anunciante.imagem}" alt="">
+                    <img src="${dadosAnuncio.anunciante.imagem}" alt="" />
                 </div>
             </div>
         </div>

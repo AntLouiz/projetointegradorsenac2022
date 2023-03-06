@@ -1813,8 +1813,22 @@ button.navbar-toggler:focus {
     flex-direction: column;
 }
 
+.modal-listing-info .listing-author h6 {
+    font-size: 30px;
+}
+
 .dados-anunciante {
     width: 100%;
+    padding-bottom: 20px;
+}
+
+.galeria-de-imagens {
+    padding: 20px;
+    text-align: center;
+}
+
+.galeria-de-imagens img {
+    width: 300px;
 }
 
 .modal-listing-info img {
@@ -5969,6 +5983,11 @@ button.navbar-toggler:focus {
 #resultados-busca .listing-content {
     padding: 0;
     cursor: pointer;
+}
+
+#resultados-busca img {
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 #resultados-busca .listing-content span {
