@@ -30,3 +30,37 @@ def busca_produtos_servicos(request):
     produtos_e_servicos = serializers.serialize('json', [*produtos, *servicos])
 
     return HttpResponse(produtos_e_servicos)
+
+def detalhe_produto(request, id):
+    produto = Produto.objects.get(id=id)
+
+    dados = json.dumps({
+        'id': produto.id,
+        'nome': produto.nome,
+        'descricao': produto.descricao,
+        'imagem': produto.imagem.url if produto.imagem else '',
+        'anunciante': {
+            'nome': produto.anunciante.nome,
+            'telefone': produto.anunciante.telefone,
+            'imagem': produto.anunciante.imagem.url if produto.anunciante.imagem else ''
+        },
+    })
+
+    return HttpResponse(dados)
+
+def detalhe_servico(request, id):
+    servico = Servico.objects.get(id=id)
+
+    dados = json.dumps({
+        'id': servico.id,
+        'nome': servico.nome,
+        'descricao': servico.descricao,
+        'imagem': servico.imagem.url if servico.imagem else '',
+        'anunciante': {
+            'nome': servico.anunciante.nome,
+            'telefone': servico.anunciante.telefone,
+            'imagem': servico.anunciante.imagem.url if servico.anunciante.imagem else ''
+        },
+    })
+
+    return HttpResponse(dados)

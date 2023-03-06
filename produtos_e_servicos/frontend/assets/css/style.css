@@ -1790,6 +1790,43 @@ button.navbar-toggler:focus {
     background: #0ec6c6
 }
 
+#fecharModal {
+    cursor: pointer;
+}
+
+#chamar-no-whats {
+    background-color: #25D366;
+    border: none;
+}
+
+.modal-conteudo {
+    display: flex;
+}
+
+.modal-listing-info .listing-bottom {
+    border: none;
+    justify-content: center;
+}
+
+.modal-listing-info .listing-author {
+    display: flex;
+    flex-direction: column;
+}
+
+.dados-anunciante {
+    width: 100%;
+}
+
+.modal-listing-info img {
+    width: 200px !important;
+    height: 200px !important;
+    border-radius: 100%;
+}
+
+.modal-descricao {
+    padding: 20px;
+}
+
 .listing-sort {
     display: flex;
     justify-content: space-between;
